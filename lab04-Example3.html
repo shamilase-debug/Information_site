@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lab 4 | Exercise 1</title>
+        <link rel="stylesheet" href="lab04_ex1.css" type="text/css" title="Default Style">
+        <style>
+      .testimonial-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow testimonials to wrap onto multiple lines */
+    gap: 20px; /* Space between testimonials */
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+.testimonial {
+flex: 1; /* Allow testimonials to grow and fill the space /
+min-width: 250px; /* Minimum width of a testimonial */
+display: flex;
+flex-direction: column; /* Stack content vertically */
+align-items: center; / Align items in the center */
+padding: 20px;
+border: 1px solid #eee;
+background-color: white;
+}
+
+.testimonial img {
+border-radius: 50%; /* Make the image circular */
+width: 100px;
+height: 100px;
+margin-bottom: 20px;
+}
+
+.testimonial p {
+flex-grow: 1; /* Allow the testimonial text to take up available space */
+text-align: center; /* Center-align the testimonial text */
+}
+
+.testimonial .name {
+font-weight: bold;
+margin-top: 20px;
+}
+@media (max-width: 600px) {
+    .testimonial-container  {
+     flex-direction: column; /* Stack nav items vertically on smaller screens */
+    }
+
+
+        </style>
+    </head>
+
+    <body>
+        
+<div class="testimonial-container">
+    <div class="testimonial">
+        <img src="https://edube.org/uploads/media/default/0001/04/user1.jpg" alt="User 1">
+        <p>"Flexbox makes designing layouts a breeze! It's a game-changer for responsive design."</p>
+        <div class="name">John Doe, Developer</div>
+    </div>
+    <div class="testimonial">
+        <img src="https://edube.org/uploads/media/default/0001/04/user2.jpg" alt="User 2">
+        <p>"The flexibility and control Flexbox offers is unmatched. It's my go-to for complex layouts."</p>
+        <div class="name">Jane Smith, Designer</div>
+    </div>
+    
+</div>
+    </body>
+</html>
